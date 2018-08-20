@@ -1,0 +1,16 @@
+function testCycle(a, b) {
+    var outString = " ";
+    var x = a;
+    var y = b;
+    
+    if( b < a) {
+        x = b;
+        y = a;
+    }
+    
+    for ( i = x; i <= y; i++) {
+        outString += " " + i;
+    }
+    
+    return outString;
+}
