@@ -1,0 +1,13 @@
+function testCycle(a, b) {
+    var sum = 0;
+    var x = a;
+    var y = b;
+        if ( a > b) {
+            x = b;
+            y = a;
+        }
+    for (i = x; i <= y; i++ ) {
+        sum += i * i;
+    }
+    return sum;
+}
