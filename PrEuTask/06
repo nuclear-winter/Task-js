@@ -1,0 +1,18 @@
+function difSumSquar () {
+    var diffirence = 0;
+    var sumSquares = 0;
+    var squaresSum = 0;
+
+    for( var i = 1; i <= 100; i++) {
+        sumSquares += (i * i);
+    }
+
+    for( var y = 1; y <= 100; y++) {
+        squaresSum += y;
+    }
+    
+    diffirence =  (squaresSum * squaresSum ) - sumSquares;
+    console.log(diffirence);
+} 
+
+console.log(difSumSquar());
